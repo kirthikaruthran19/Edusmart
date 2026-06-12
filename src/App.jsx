@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 // Admin Pages
 import Dashboard from "./pages/Dashboard/Dashboard";
 import UserManagement from "./pages/UserManagement/UserManagement";
@@ -35,7 +35,7 @@ import ParentSettings from "./pages/ParentSettings/ParentSettings";
 
 function App() {
   return (
-   <BrowserRouter basename="/Edusmart">
+   <HashRouter>
       <Routes>
         {/* Admin */}
         <Route path="/admin-dashboard" element={<Dashboard />}/>
@@ -76,7 +76,7 @@ function App() {
 
         <Route path="/parent-settings" element={<ParentSettings />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
