@@ -1,0 +1,122 @@
+.stat-card {
+  background: #f5f3ff;
+
+  border-radius: 20px;
+
+  padding: 18px;
+
+  border-left: 5px solid #5b4df7;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  min-height: 150px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.stat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.stat-icon {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 16px;
+
+  background: #dcd6ff;
+  color: #5b4df7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.growth-badge {
+  background: #dff7e7;
+  color: #0f9d58;
+
+  padding: 6px 14px;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.stat-card h2 {
+  font-size: 28px;
+  font-weight: 700;
+
+  margin: 6px 0;
+
+  color: #4f46e5;
+}
+
+.stat-card h3 {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.stat-card p {
+  margin: 0;
+
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .stat-card {
+    min-height: 200px;
+  }
+
+  .stat-card h2 {
+    font-size: 34px;
+  }
+
+  .stat-card h3 {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .stat-card {
+    min-height: auto;
+
+    padding: 18px;
+  }
+
+  .stat-card h2 {
+    font-size: 30px;
+  }
+
+  .stat-card h3 {
+    font-size: 17px;
+  }
+
+  .growth-badge {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

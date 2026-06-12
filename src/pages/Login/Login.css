@@ -1,0 +1,221 @@
+.login-page {
+  min-height: 100vh;
+
+  background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-overlay {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  backdrop-filter: blur(2px);
+}
+
+.login-card {
+  width: 460px;
+  max-width: 90%;
+
+  background: #f5ede1;
+
+  border-radius: 24px;
+
+  padding: 24px 32px;
+}
+.login-card h1 {
+  margin: 0;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.login-subtitle {
+  margin-top: 8px;
+  margin-bottom: 32px;
+
+  color: #9ca3af;
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Role Switch */
+
+.role-switch {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+  margin-bottom: 40px;
+}
+
+.role-btn {
+  height: 52px;
+
+  border-radius: 40px;
+
+  border: 2px solid #8b5cf6;
+
+  background: transparent;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.role-btn.active {
+  background: #7c5cf1;
+  color: white;
+}
+
+/* Inputs */
+
+.input-group {
+  margin-bottom: 28px;
+}
+
+.input-group label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  height: 54px;
+
+  border: 2px solid #77d4d4;
+  border-radius: 20px;
+
+  padding: 0 18px;
+
+  background: white;
+}
+
+.input-box svg {
+  color: #9ca3af;
+}
+
+.input-box input {
+  flex: 1;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 15px;
+}
+
+/* Sign In Button */
+
+.signin-btn {
+  width: 100%;
+  height: 54px;
+
+  border: none;
+  border-radius: 40px;
+
+  background: #7c5cf1;
+  color: white;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  margin-top: 15px;
+}
+
+.signin-btn:hover {
+  opacity: 0.9;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .login-card {
+    padding: 24px;
+  }
+
+  .login-card h1 {
+    font-size: 36px;
+  }
+
+  .login-subtitle {
+    font-size: 16px;
+  }
+
+  .role-switch {
+    flex-direction: column;
+  }
+
+  .role-btn {
+    font-size: 22px;
+    height: 56px;
+  }
+
+  .input-group label {
+    font-size: 18px;
+  }
+
+  .signin-btn {
+    font-size: 20px;
+    height: 56px;
+  }
+}
+.password-toggle {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.login-error {
+  color: #dc2626;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.demo-credentials {
+  margin-top: 20px;
+  padding: 14px 18px;
+  background: rgba(124, 92, 241, 0.08);
+  border-radius: 12px;
+}
+
+.demo-credentials h4 {
+  margin: 0 0 10px;
+}
+
+.credential-item {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.credential-item strong {
+  color: #7c5cf1;
+}

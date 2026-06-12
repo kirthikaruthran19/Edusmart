@@ -1,0 +1,21 @@
+.students-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #edf2f7;
+}
+
+.students-main {
+  flex: 1;
+  margin-left: 308px;
+}
+
+.students-content {
+  padding: 32px;
+}
+
+.students-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 24px;
+}

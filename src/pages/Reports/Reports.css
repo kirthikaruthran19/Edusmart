@@ -1,0 +1,201 @@
+.reports-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #eef6f6;
+}
+
+/* Main */
+
+.reports-main {
+  flex: 1;
+  margin-left: 308px;
+  min-width: 0;
+}
+
+/* Content */
+
+.reports-content {
+  padding: 32px;
+}
+
+/* Header */
+
+.reports-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.reports-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.reports-header p {
+  font-size: 15px;
+  color: #666;
+}
+
+/* Export Button */
+
+.export-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 24px;
+
+  border: none;
+  border-radius: 40px;
+
+  background: white;
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.export-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Tabs */
+
+.report-tabs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #dfeeee;
+
+  padding: 8px;
+
+  width: fit-content;
+
+  border-radius: 20px;
+
+  margin-bottom: 30px;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border: none;
+  background: transparent;
+
+  padding: 12px 22px;
+
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.tab-btn:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.tab-btn.active {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width: 1200px) {
+
+  .reports-content {
+    padding: 24px;
+  }
+
+  .reports-header h1 {
+    font-size: 34px;
+  }
+
+  .tab-btn {
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width: 768px) {
+
+  .reports-main {
+    margin-left: 0;
+  }
+
+  .reports-content {
+    padding: 16px;
+  }
+
+  .reports-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .reports-header h1 {
+    font-size: 28px;
+  }
+
+  .reports-header p {
+    font-size: 14px;
+  }
+
+  .export-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .report-tabs {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    scrollbar-width: none;
+  }
+
+  .report-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-btn {
+    flex-shrink: 0;
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
+/* ==========================
+   Small Mobile
+========================== */
+
+@media (max-width: 480px) {
+
+  .reports-header h1 {
+    font-size: 24px;
+  }
+
+  .tab-btn {
+    font-size: 13px;
+  }
+}

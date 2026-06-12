@@ -1,0 +1,41 @@
+.teacher-assignments-layout {
+  display: flex;
+
+  min-height: 100vh;
+
+  background: #eef6f6;
+}
+
+.teacher-assignments-main {
+  flex: 1;
+
+  margin-left: 308px;
+
+  min-width: 0;
+}
+
+.teacher-assignments-content {
+  padding: 30px;
+
+  max-width: 1600px;
+}
+
+/* Tablet */
+
+@media (max-width: 1200px) {
+  .teacher-assignments-main {
+    margin-left: 0;
+  }
+
+  .teacher-assignments-content {
+    padding: 24px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .teacher-assignments-content {
+    padding: 18px;
+  }
+}

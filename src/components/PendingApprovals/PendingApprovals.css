@@ -1,0 +1,141 @@
+.approvals-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.approval-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.approval-header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.approval-header p {
+  margin-top: 4px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.count-badge {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fef3c7;
+  color: #d97706;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.approval-item {
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  margin-bottom: 18px;
+  transition: all 0.3s ease;
+}
+
+.approval-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.approval-item:last-child {
+  margin-bottom: 0;
+}
+
+.approval-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.approval-top h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.approval-top p {
+  margin-top: 6px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #6b7280;
+}
+
+.type-badge {
+  background: #fef3c7;
+  color: #d97706;
+
+  padding: 7px 16px;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.approval-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.approve-btn,
+.reject-btn {
+  flex: 1;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  border-radius: 14px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.approve-btn {
+  background: #10b981;
+  color: white;
+  border: none;
+}
+
+.approve-btn:hover {
+  background: #059669;
+}
+
+.reject-btn {
+  background: #ffffff;
+  color: #ef4444;
+  border: 1.5px solid #fca5a5;
+}
+
+.reject-btn:hover {
+  background: #fef2f2;
+}

@@ -1,0 +1,56 @@
+.teacher-chart-card {
+  background: #ffffff;
+  border-radius: 32px;
+  padding: 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.teacher-chart-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.teacher-chart-header p {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.teacher-chart-wrapper {
+  width: 100%;
+  height: 350px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .teacher-chart-card {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .teacher-chart-card {
+    border-radius: 24px;
+    padding: 18px;
+  }
+
+  .teacher-chart-header h2 {
+    font-size: 18px;
+  }
+
+  .teacher-chart-wrapper {
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .teacher-chart-card {
+    padding: 15px;
+  }
+
+  .teacher-chart-wrapper {
+    height: 240px;
+  }
+}

@@ -1,0 +1,98 @@
+.class-card {
+  background: #fff;
+  border-radius: 28px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.class-card:hover {
+  transform: translateY(-3px);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: #f0efff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3038d6;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.delete {
+  color: red;
+}
+
+.class-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+   margin: 8px 0;
+}
+
+.room {
+  color: #888;
+}
+
+.students-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.students-row span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #777;
+}
+
+.badge {
+  background: #a36df2;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.class-card hr {
+  border: none;
+  height: 1px;
+  background: #e6e6e6;
+}
+
+.class-card p {
+  color: #666;
+}
+
+.class-card p span {
+  color: #999;
+}
+
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.academic-content {
+  padding: 30px;
+  max-width: 1400px;
+}

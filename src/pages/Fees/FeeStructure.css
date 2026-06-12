@@ -1,0 +1,173 @@
+.section-header {
+  margin-bottom: 25px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.section-header p {
+  color: #666;
+}
+
+.fee-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.fee-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
+.fee-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.fee-info {
+  display: flex;
+  gap: 12px;
+}
+
+.fee-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: #eef0ff;
+  color: #3b43d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fee-info h3 {
+  margin: 0;
+}
+
+.fee-info span {
+  color: #777;
+  font-size: 14px;
+}
+
+.fee-actions {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.fee-card-bottom {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fee-card-bottom h2 {
+  margin: 0;
+}
+
+.fee-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.annual {
+  background: #dff7e8;
+  color: #2c8a52;
+}
+
+.quarterly {
+  background: #efe2ff;
+  color: #8f57d7;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .fee-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-header h2 {
+    font-size: 24px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .fee-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .section-header h2 {
+    font-size: 22px;
+  }
+
+  .section-header p {
+    font-size: 14px;
+  }
+
+  .fee-card {
+    padding: 16px;
+  }
+
+  .fee-card-top {
+    gap: 12px;
+  }
+
+  .fee-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .fee-info h3 {
+    font-size: 16px;
+  }
+
+  .fee-info span {
+    font-size: 13px;
+  }
+
+  .fee-card-bottom h2 {
+    font-size: 20px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+  .fee-card-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fee-actions {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  .fee-card-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .fee-badge {
+    width: fit-content;
+  }
+
+  .section-header h2 {
+    font-size: 20px;
+  }
+}

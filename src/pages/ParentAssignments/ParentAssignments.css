@@ -1,0 +1,53 @@
+.parent-assignments-layout {
+  display: flex;
+  min-height: 100vh;
+
+  background: #f7f8fc;
+}
+
+.parent-assignments-main {
+  flex: 1;
+  margin-left: 280px;
+}
+
+.parent-assignments-content {
+  padding: 30px;
+}
+
+.assignments-page-header {
+  margin-bottom: 25px;
+}
+
+.assignments-page-header h2 {
+  margin: 0;
+
+  font-size: 28px;
+  color: #222;
+}
+
+.assignments-page-header p {
+  margin-top: 8px;
+
+  color: #666;
+  font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+  .parent-assignments-main {
+    margin-left: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .parent-assignments-main {
+    margin-left: 0;
+  }
+
+  .parent-assignments-content {
+    padding: 20px;
+  }
+
+  .assignments-page-header h2 {
+    font-size: 22px;
+  }
+}

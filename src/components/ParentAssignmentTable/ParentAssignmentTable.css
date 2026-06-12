@@ -1,0 +1,104 @@
+.parent-assignment-card {
+  background: #fff;
+
+  border-radius: 16px;
+
+  padding: 24px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  margin-top: 24px;
+}
+
+.parent-assignment-header {
+  margin-bottom: 20px;
+}
+
+.parent-assignment-header h3 {
+  margin: 0;
+
+  font-size: 22px;
+  color: #222;
+}
+
+.parent-assignment-table-wrapper {
+  overflow-x: auto;
+}
+
+.parent-assignment-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.parent-assignment-table th {
+  text-align: left;
+
+  padding: 14px;
+
+  background: #f7f8fc;
+
+  color: #666;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.parent-assignment-table td {
+  padding: 16px 14px;
+
+  border-bottom: 1px solid #eee;
+
+  font-size: 14px;
+}
+
+.assignment-title-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-weight: 500;
+}
+
+.date-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.assignment-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.assignment-pending {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.assignment-submitted {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.assignment-graded {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .parent-assignment-table {
+    min-width: 850px;
+  }
+
+  .parent-assignment-card {
+    padding: 18px;
+  }
+}

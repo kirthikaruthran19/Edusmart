@@ -1,0 +1,41 @@
+.roles-card {
+  background: white;
+  border-radius: 24px;
+  padding: 30px;
+}
+
+.roles-header h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.roles-header p {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.roles-table-wrapper {
+  overflow-x: auto;
+}
+
+.roles-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.roles-table th {
+  text-align: left;
+  padding: 16px;
+  background: #eef6f6;
+  font-size: 15px;
+}
+
+.roles-table td {
+  padding: 18px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.roles-table input {
+  width: 18px;
+  height: 18px;
+}

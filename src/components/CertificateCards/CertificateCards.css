@@ -1,0 +1,160 @@
+.certificate-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+}
+
+.certificate-card {
+  width: 300px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 0;
+}
+
+/* Top Section */
+
+.certificate-top {
+  height: 120px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.merit-card .certificate-top {
+  background: #f7f2df;
+}
+
+.completion-card .certificate-top {
+  background: #edf0fb;
+}
+
+.attendance-card .certificate-top {
+  background: #edf8f2;
+}
+
+/* Icon */
+
+.certificate-icon {
+  width: 58px;
+  height: 58px;
+
+  background: white;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.merit-card .certificate-icon {
+  color: #f59e0b;
+}
+
+.completion-card .certificate-icon {
+  color: #4f46e5;
+}
+
+.attendance-card .certificate-icon {
+  color: #059669;
+}
+
+/* Badge */
+
+.certificate-badge {
+  padding: 4px 14px;
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.merit-badge {
+  background: #fde9c5;
+  color: #b96b00;
+}
+
+.completion-badge {
+  background: #dddffd;
+  color: #4f46e5;
+}
+
+.attendance-badge {
+  background: #ccefdc;
+  color: #047857;
+}
+
+/* Content */
+
+.certificate-content {
+  padding: 22px;
+}
+
+.certificate-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.certificate-content p {
+  font-size: 16px;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.certificate-content span {
+  display: block;
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+/* Button */
+
+.certificate-btn {
+  width: 100%;
+  height: 42px;
+
+  border: 1px solid #d7d7d7;
+  border-radius: 20px;
+
+  background: #edf4f4;
+  color: #111827;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-weight: 600;
+}
+
+.certificate-btn:hover {
+  background: #e5eeee;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+  .certificate-grid {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .certificate-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .certificate-grid {
+    justify-content: center;
+  }
+}

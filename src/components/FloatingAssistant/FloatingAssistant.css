@@ -1,0 +1,54 @@
+.floating-assistant {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+
+  height: 52px;
+  padding: 0 20px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: #5146e5;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  z-index: 9999;
+
+  box-shadow: 0 6px 16px rgba(81, 70, 229, 0.25);
+
+  transition: all 0.25s ease;
+}
+
+.floating-assistant:hover {
+  transform: translateY(-2px);
+}
+.floating-assistant:hover {
+  transform: translateY(-2px);
+  background: #4338ca;
+}
+
+.floating-assistant span {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .floating-assistant {
+    right: 16px;
+    bottom: 16px;
+
+    height: 56px;
+
+    padding: 0 20px;
+
+    font-size: 16px;
+  }
+}

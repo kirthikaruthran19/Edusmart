@@ -1,0 +1,55 @@
+.parent-settings-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f7f8fc;
+}
+
+.parent-settings-main {
+  flex: 1;
+  margin-left: 280px;
+}
+
+.parent-settings-content {
+  padding: 30px;
+}
+
+.settings-page-header {
+  margin-bottom: 25px;
+}
+
+.settings-page-header h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #222;
+}
+
+.settings-page-header p {
+  margin-top: 8px;
+  color: #666;
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .parent-settings-main {
+    margin-left: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .parent-settings-main {
+    margin-left: 0;
+  }
+
+  .parent-settings-content {
+    padding: 20px;
+  }
+
+  .settings-page-header h2 {
+    font-size: 22px;
+  }
+}

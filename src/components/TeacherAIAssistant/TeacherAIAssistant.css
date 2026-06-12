@@ -1,0 +1,61 @@
+.teacher-ai-card {
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #5b21b6
+  );
+
+  color: white;
+
+  border-radius: 24px;
+  padding: 28px;
+}
+
+.teacher-ai-icon {
+  width: 60px;
+  height: 60px;
+
+  background: rgba(255,255,255,0.15);
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+}
+
+.teacher-ai-card h2 {
+  margin-bottom: 12px;
+}
+
+.teacher-ai-card p {
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.teacher-ai-card button {
+  margin-top: 20px;
+
+  border: none;
+  background: white;
+  color: #7c3aed;
+
+  padding: 12px 18px;
+
+  border-radius: 12px;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.teacher-ai-card button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .teacher-ai-card {
+    padding: 20px;
+  }
+}

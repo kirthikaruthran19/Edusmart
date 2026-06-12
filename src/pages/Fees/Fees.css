@@ -1,0 +1,335 @@
+.fees-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f6f8fa;
+}
+
+.fees-main {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  margin-left: 308px;
+}
+
+.fees-content-wrapper {
+  padding: 24px;
+}
+
+.hamburger-btn {
+  display: none;
+  border: none;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 992px) {
+  .fees-main {
+    margin-left: 0;
+  }
+
+  .hamburger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+.fees-page {
+  width: 100%;
+  max-width: 100%;
+  padding: 24px;
+  overflow-x: hidden;
+}
+
+/* Header */
+
+.fees-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.fees-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.fees-header p {
+  margin-top: 4px;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.export-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid #d1d5db;
+  background: #fff;
+
+  padding: 12px 20px;
+  border-radius: 30px;
+
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Stats */
+
+.fees-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  margin-bottom: 40px;
+}
+
+.stat-box {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  min-height: 130px;
+}
+
+.collected {
+  border-left: 6px solid #10b981;
+}
+
+.pending {
+  border-left: 6px solid #f59e0b;
+}
+
+.overdue {
+  border-left: 6px solid #ef4444;
+}
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.yellow {
+  background: #fef3c7;
+  color: #f59e0b;
+}
+
+.red {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.stat-box h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.stat-box p {
+  color: #6b7280;
+}
+
+/* Tabs */
+
+.fees-tabs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: #dcecec;
+  max-width: 100%;
+  width: 100%;
+
+  padding: 8px;
+  border-radius: 22px;
+  margin-bottom: 32px;
+
+  overflow-x: auto;
+}
+.fees-tabs button {
+  border: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 22px;
+
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.fees-tabs button.active {
+  background: white;
+}
+
+/* Content */
+
+.fees-content {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .fees-page {
+    padding: 20px;
+  }
+
+  .fees-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .fees-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .export-btn {
+    width: fit-content;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .fees-main {
+    margin-left: 0;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .fees-content-wrapper {
+    padding: 12px;
+  }
+
+  .fees-page {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .fees-header {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .fees-header h1 {
+    font-size: 24px;
+  }
+
+  .fees-header p {
+    font-size: 14px;
+  }
+
+  .export-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .fees-stats {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .stat-box {
+    width: 100%;
+    padding: 18px;
+    min-height: auto;
+  }
+
+  .stat-box h2 {
+    font-size: 22px;
+  }
+
+  .fees-tabs {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+  }
+
+  .fees-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fees-tabs button {
+    flex-shrink: 0;
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+  .fees-content-wrapper {
+    padding: 8px;
+  }
+
+  .fees-header h1 {
+    font-size: 20px;
+  }
+
+  .fees-header p {
+    font-size: 13px;
+  }
+
+  .stat-box {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .stat-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .stat-box h2 {
+    font-size: 18px;
+  }
+
+  .stat-box p {
+    font-size: 12px;
+  }
+
+  .fees-tabs button {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+}

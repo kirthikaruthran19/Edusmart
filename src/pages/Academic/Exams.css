@@ -1,0 +1,358 @@
+.exams-page {
+  width: 100%;
+}
+
+/* Header */
+
+.exam-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.search-box {
+  width: 380px;
+  height: 54px;
+
+  background: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 16px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+
+  background: transparent;
+  font-size: 15px;
+}
+
+.exam-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.filter-btn,
+.add-exam-btn {
+  height: 54px;
+  border-radius: 14px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.filter-btn {
+  background: white;
+  border: 1px solid #d9d9d9;
+}
+
+.add-exam-btn {
+  border: none;
+  background: #3038d6;
+  color: white;
+}
+
+/* Exam Cards */
+
+.exam-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.exam-card {
+  background: white;
+  border-radius: 30px;
+
+  padding: 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+}
+
+.exam-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.exam-icon {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 16px;
+  background: #eef0ff;
+
+  color: #3038d6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exam-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.exam-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 5px;
+}
+
+.exam-title-row h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.exam-meta {
+  color: #7a7a7a;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.exam-passed {
+  color: #11a683;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Status */
+
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status.completed {
+  background: #fff4d6;
+  color: #d4a100;
+}
+
+.status.scheduled {
+  background: #d7faf1;
+  color: #0ea58d;
+}
+
+.status.planning {
+  background: #d7faf1;
+  color: #0ea58d;
+}
+
+.status.upcoming {
+  background: #ece5ff;
+  color: #7c3aed;
+}
+
+/* Right Actions */
+
+.exam-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  cursor: pointer;
+}
+
+.exam-card-actions svg {
+  transition: 0.2s;
+}
+
+.exam-card-actions svg:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .exam-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .exam-actions {
+    flex-direction: column;
+  }
+
+  .filter-btn,
+  .add-exam-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .exam-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .exam-card-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+
+/* Exam Card Top */
+
+.exam-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.exam-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Table */
+
+.exam-table-wrapper {
+  margin-top: 24px;
+  overflow-x: auto;
+}
+
+.exam-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.exam-table thead {
+  background: #f3f6f9;
+}
+
+.exam-table th {
+  padding: 14px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.exam-table td {
+  padding: 16px 14px;
+  border-bottom: 1px solid #ececec;
+  font-size: 15px;
+}
+
+.exam-table tbody tr:hover {
+  background: #fafafa;
+}
+
+/* Failed Rows */
+
+.exam-table tbody tr:nth-child(1),
+.exam-table tbody tr:nth-child(2) {
+  background: #fff6f6;
+}
+
+/* Grade Badge */
+
+.grade-pill {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+
+  border: 2px solid #6d63ff;
+  color: #6d63ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Pass Badge */
+
+.pass-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 14px;
+
+  border-radius: 20px;
+
+  background: #d7faf1;
+  color: #0ea58d;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Fail Badge */
+
+.fail-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 14px;
+
+  border-radius: 20px;
+
+  background: #ffe1e1;
+  color: #ff4d4f;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Percentage Colors */
+
+.exam-table tbody tr:nth-child(1) td:nth-child(4),
+.exam-table tbody tr:nth-child(2) td:nth-child(4) {
+  color: #ff4d4f;
+  font-weight: 700;
+}
+
+/* Mobile Table */
+
+@media (max-width: 768px) {
+  .exam-table {
+    min-width: 650px;
+  }
+
+  .exam-card-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .exam-card-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,196 @@
+.sidebar {
+  width: 308px;
+  height: 100vh;
+  background: #3038d6;
+  color: white;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  padding: 16px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+}
+
+/* Logo */
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Menu */
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  height: 48px;
+  padding: 0 20px;
+
+  border-radius: 16px;
+
+  text-decoration: none;
+  color: white;
+
+  transition: all 0.3s ease;
+}
+
+.menu-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.active-link {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.menu-link span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Footer */
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+/* Profile */
+
+.sidebar-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  background: #dbeafe;
+  color: #1d4ed8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.profile-details h4 {
+  margin: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profile-details p {
+  margin: 2px 0 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+/* Logout */
+
+.logout-btn {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 10px 0;
+
+  background: transparent;
+  border: none;
+
+  color: white;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  opacity: 0.8;
+}
+
+/* Close Button */
+
+.close-sidebar {
+  display: none;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .sidebar {
+    width: 308px;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: -308px;
+
+    z-index: 1200;
+
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .close-sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    background: transparent;
+    border: none;
+
+    color: white;
+    cursor: pointer;
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    z-index: 1100;
+  }
+}

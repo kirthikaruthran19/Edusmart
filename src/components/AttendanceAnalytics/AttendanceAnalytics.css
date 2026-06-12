@@ -1,0 +1,165 @@
+.attendance-analytics {
+  background: #ffffff;
+
+  border-radius: 30px;
+
+  padding: 24px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  height: fit-content;
+}
+
+.attendance-analytics h2 {
+  margin: 0 0 28px;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #111827;
+}
+
+/* Chart */
+
+.analytics-chart {
+  height: 260px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  padding-bottom: 20px;
+}
+
+.chart-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.chart-bars {
+  height: 220px;
+
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.present-bar {
+  width: 16px;
+
+  background: #7c6cf8;
+
+  border-radius: 20px 20px 0 0;
+}
+
+.absent-bar {
+  width: 16px;
+
+  background: #ff8f87;
+
+  border-radius: 20px 20px 0 0;
+}
+
+.chart-group span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Legend */
+
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  margin-top: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.legend-box {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 2px;
+}
+
+.legend-box.present {
+  background: #7c6cf8;
+}
+
+.legend-box.absent {
+  background: #ff8f87;
+}
+
+/* Progress */
+
+.class-progress {
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.progress-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.class-name {
+  min-width: 100px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #111827;
+}
+
+.progress-wrapper {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-track {
+  flex: 1;
+
+  height: 10px;
+
+  background: #e5e7eb;
+
+  border-radius: 999px;
+
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+
+  background: #7c6cf8;
+
+  border-radius: 999px;
+}
+
+.percentage {
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #111827;
+}

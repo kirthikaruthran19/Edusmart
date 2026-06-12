@@ -1,0 +1,93 @@
+.pending-header {
+  margin-bottom: 25px;
+}
+
+.pending-header h2 {
+  font-size: 28px;
+}
+
+.pending-header p {
+  color: #555;
+}
+
+.pending-table {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.pending-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pending-table th {
+  background: #eef1f4;
+  text-align: left;
+  padding: 18px;
+}
+
+.pending-table td {
+  padding: 18px;
+  border-top: 1px solid #eee;
+}
+
+.reminder-btn {
+  border: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .pending-header h2 {
+    font-size: 24px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .pending-header h2 {
+    font-size: 22px;
+  }
+
+  .pending-header p {
+    font-size: 14px;
+  }
+
+  .pending-table {
+    overflow-x: auto;
+  }
+
+  .pending-table table {
+    min-width: 900px;
+  }
+
+  .reminder-btn {
+    white-space: nowrap;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+  .pending-header h2 {
+    font-size: 20px;
+  }
+
+  .pending-header p {
+    font-size: 13px;
+  }
+
+  .reminder-btn {
+    font-size: 13px;
+  }
+}

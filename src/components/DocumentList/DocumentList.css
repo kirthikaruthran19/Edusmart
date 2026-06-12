@@ -1,0 +1,110 @@
+.document-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.document-card {
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  padding: 20px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.document-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  flex: 1;
+}
+
+.file-icon {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 14px;
+
+  background: #eef2ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #3047e8;
+}
+
+.document-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+
+  margin-bottom: 8px;
+}
+
+.document-meta {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.document-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.document-tag {
+  background: #eef2ff;
+  color: #3047e8;
+
+  padding: 8px 14px;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.action-btn {
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  cursor: pointer;
+
+  border-radius: 10px;
+
+  background: #f3f4f6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete {
+  color: #ef4444;
+}
+
+@media (max-width: 768px) {
+  .document-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .document-right {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

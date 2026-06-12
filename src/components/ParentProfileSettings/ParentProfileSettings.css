@@ -1,0 +1,91 @@
+.parent-profile-card {
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  padding: 24px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.profile-card-header {
+  margin-bottom: 25px;
+}
+
+.profile-card-header h3 {
+  margin: 0;
+
+  font-size: 22px;
+  color: #222;
+}
+
+.profile-card-header p {
+  margin-top: 6px;
+
+  color: #777;
+  font-size: 14px;
+}
+
+.profile-section {
+  margin-bottom: 30px;
+}
+
+.profile-section:last-child {
+  margin-bottom: 0;
+}
+
+.profile-section h4 {
+  margin-bottom: 16px;
+
+  color: #432394;
+  font-size: 18px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-field label {
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #555;
+}
+
+.profile-field input {
+  height: 48px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  padding: 0 14px;
+
+  background: #f8f9fd;
+
+  font-size: 14px;
+}
+
+.profile-field input:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .parent-profile-card {
+    padding: 18px;
+  }
+}

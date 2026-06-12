@@ -1,0 +1,111 @@
+.parent-marks-card {
+  background: #fff;
+
+  border-radius: 16px;
+
+  padding: 24px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  margin-top: 24px;
+}
+
+.parent-marks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.parent-marks-header h3 {
+  margin: 0;
+
+  font-size: 22px;
+  color: #222;
+}
+
+.parent-marks-header p {
+  margin-top: 4px;
+
+  color: #777;
+  font-size: 14px;
+}
+
+.average-score-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #432394;
+  color: white;
+
+  padding: 10px 16px;
+
+  border-radius: 12px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.marks-table-wrapper {
+  overflow-x: auto;
+}
+
+.parent-marks-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.parent-marks-table th {
+  text-align: left;
+
+  padding: 14px;
+
+  background: #f7f8fc;
+
+  color: #666;
+
+  font-size: 14px;
+}
+
+.parent-marks-table td {
+  padding: 16px 14px;
+
+  border-bottom: 1px solid #eee;
+
+  font-size: 14px;
+}
+
+.grade-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #ecfdf3;
+
+  color: #15803d;
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  font-weight: 600;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .parent-marks-card {
+    padding: 18px;
+  }
+
+  .parent-marks-table {
+    min-width: 700px;
+  }
+
+  .parent-marks-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

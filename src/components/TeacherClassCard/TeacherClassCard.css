@@ -1,0 +1,107 @@
+.teacher-class-card {
+  background: white;
+  border-radius: 26px;
+  padding: 24px;
+
+  border-left: 6px solid #6d4aff;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.teacher-class-top {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.teacher-class-icon {
+  width: 86px;
+  height: 86px;
+
+  border-radius: 24px;
+
+  background: #efe7ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #6d4aff;
+}
+
+.teacher-class-top h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.teacher-class-top p {
+  color: #6d4aff;
+  margin-top: 6px;
+}
+
+.teacher-class-info {
+  margin-top: 24px;
+}
+
+.teacher-info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.teacher-info-row span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #666;
+}
+
+.teacher-schedule {
+  margin-top: 18px;
+
+  display: inline-block;
+
+  background: #f3f4f6;
+
+  padding: 8px 14px;
+
+  border-radius: 20px;
+
+  font-size: 14px;
+  color: #777;
+}
+
+.teacher-card-actions {
+  margin-top: 22px;
+
+  display: flex;
+  gap: 12px;
+}
+
+.teacher-card-actions button {
+  flex: 1;
+
+  border: none;
+
+  background: #6d4aff;
+  color: white;
+
+  padding: 12px;
+
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+@media (max-width:768px) {
+
+  .teacher-card-actions {
+    flex-direction: column;
+  }
+
+}

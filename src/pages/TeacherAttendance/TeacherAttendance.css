@@ -1,0 +1,182 @@
+.teacher-attendance-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #eef3f8;
+}
+
+.teacher-attendance-main {
+  flex: 1;
+  margin-left: 308px;
+}
+
+.teacher-attendance-content {
+  padding: 32px;
+}
+
+.attendance-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 28px;
+}
+.attendance-summary {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+
+  margin-bottom: 32px;
+}
+
+.summary-card {
+  width: 240px;
+  height: 120px;
+
+  border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: white;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.summary-card h2 {
+  margin: 0;
+
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.summary-card p {
+  margin-top: 8px;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Present */
+
+.present-card {
+  background: #ecfdf5;
+  border: 1px solid #86efac;
+}
+
+.present-card h2,
+.present-card p {
+  color: #059669;
+}
+
+/* Absent */
+
+.absent-card {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.absent-card h2,
+.absent-card p {
+  color: #dc2626;
+}
+
+/* Late */
+
+.late-card {
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+}
+
+.late-card h2,
+.late-card p {
+  color: #d97706;
+}
+.attendance-page-header h1 {
+  margin: 0;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.save-attendance-btn {
+  border: none;
+
+  height: 48px;
+
+  padding: 0 24px;
+
+  border-radius: 12px;
+
+  background: #5b4dfd;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 18px rgba(91, 77, 253, 0.25);
+
+  transition: 0.2s;
+}
+
+.save-attendance-btn:hover {
+  background: #4f46e5;
+}
+
+.attendance-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 24px;
+
+  align-items: start;
+}
+
+.attendance-left-card {
+  background: white;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Tablet */
+
+@media (max-width: 1200px) {
+  .attendance-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .teacher-attendance-main {
+    margin-left: 0;
+  }
+
+  .teacher-attendance-content {
+    padding: 20px;
+  }
+
+  .attendance-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .save-attendance-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,109 @@
+.publish-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+.publish-modal {
+  width: 500px;
+  max-width: 90%;
+
+  background: white;
+  border-radius: 24px;
+
+  padding: 30px;
+}
+
+.publish-modal h2 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  color: #111827;
+}
+
+.publish-modal p {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.publish-features {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  margin-bottom: 30px;
+}
+
+.publish-features div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #374151;
+  font-weight: 500;
+}
+
+.publish-features svg {
+  color: #22c55e;
+}
+
+.publish-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancel-btn {
+  border: none;
+  background: #e5e7eb;
+
+  padding: 12px 22px;
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
+.publish-btn {
+  border: none;
+  background: linear-gradient(
+    90deg,
+    #5f4af2,
+    #6c4cf1
+  );
+
+  color: white;
+
+  padding: 12px 22px;
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
+.publish-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .publish-modal {
+    padding: 24px;
+  }
+
+  .publish-modal h2 {
+    font-size: 22px;
+  }
+
+  .publish-actions {
+    flex-direction: column;
+  }
+
+  .cancel-btn,
+  .publish-btn {
+    width: 100%;
+  }
+}

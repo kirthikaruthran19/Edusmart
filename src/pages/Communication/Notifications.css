@@ -1,0 +1,140 @@
+.notifications-card {
+  background: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.notification-section {
+  padding: 28px 32px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.notification-section:last-child {
+  border-bottom: none;
+}
+
+.notification-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+.notification-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 0;
+}
+
+.notification-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.notification-left h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.notification-left p {
+  font-size: 14px;
+  color: #7b7b7b;
+  line-height: 1.4;
+}
+
+.time {
+  min-width: 90px;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.icon-box {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e9f4f3;
+}
+
+.icon-box svg {
+  width: 22px;
+  height: 22px;
+}
+
+.icon-box.warning {
+  color: #f59e0b;
+}
+
+.icon-box.success {
+  color: #22c55e;
+}
+
+.icon-box.info {
+  color: #3038d6;
+}
+
+.icon-box.admission {
+  color: #3038d6;
+}
+
+@media (max-width: 768px) {
+  .notification-section {
+    padding: 20px;
+  }
+
+  .notification-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .time {
+    text-align: left;
+    margin-left: 60px;
+  }
+
+  .notification-left h4 {
+    font-size: 15px;
+  }
+
+  .notification-left p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .notification-section {
+    padding: 18px;
+  }
+
+  .notification-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .notification-left h4 {
+    font-size: 16px;
+  }
+
+  .notification-left p {
+    font-size: 13px;
+  }
+
+  .time {
+    font-size: 14px;
+    margin-left: 58px;
+  }
+}

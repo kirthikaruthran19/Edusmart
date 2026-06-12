@@ -1,0 +1,310 @@
+.academic-years {
+  width: 100%;
+}
+
+/* Header */
+
+.academic-years-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 32px;
+}
+
+.academic-years-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+
+  margin-bottom: 6px;
+}
+
+.academic-years-header p {
+  font-size: 16px;
+  color: #4b5563;
+}
+
+/* Add Button */
+
+.add-year-btn {
+  border: none;
+  cursor: pointer;
+
+  background: #3047e8;
+  color: white;
+
+  padding: 12px 24px;
+
+  border-radius: 999px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.add-year-btn:hover {
+  opacity: 0.9;
+}
+
+/* List */
+
+.years-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Card */
+
+.year-row {
+  background: #ffffff;
+
+  border: 1px solid #cfd8d8;
+  border-radius: 24px;
+
+  padding: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: 0.3s;
+}
+
+.year-row:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.year-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Icon */
+
+.year-icon {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 14px;
+
+  background: #eef0ff;
+  color: #3047e8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Info */
+
+.year-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #111827;
+
+  margin-bottom: 6px;
+}
+
+.year-info p {
+  font-size: 16px;
+  color: #4b5563;
+}
+
+/* Status */
+
+.year-status {
+  padding: 12px 28px;
+
+  border-radius: 999px;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.year-status.current {
+  background: #d8f4e2;
+  color: #3f7a57;
+}
+
+.year-status.past {
+  background: #dff0f0;
+  color: #7a7070;
+}
+
+/* Modal Overlay */
+
+.academic-modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+/* Modal */
+
+.academic-modal {
+  width: 90%;
+  max-width: 1050px;
+
+  background: white;
+
+  border-radius: 36px;
+
+  padding: 40px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.academic-modal h2 {
+  color: #3047e8;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  margin-bottom: 28px;
+}
+
+/* Form */
+
+.academic-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-size: 18px;
+  font-weight: 600;
+
+  margin-bottom: 10px;
+
+  color: #111827;
+}
+
+.form-field input {
+  height: 54px;
+
+  border: 1px solid #d5d5d5;
+  border-radius: 16px;
+
+  padding: 0 16px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+.form-field input:focus {
+  border-color: #3047e8;
+}
+
+/* Actions */
+
+.academic-modal-actions {
+  display: flex;
+  gap: 16px;
+
+  margin-top: 32px;
+}
+
+.save-year-btn {
+  border: none;
+  cursor: pointer;
+
+  background: #3047e8;
+  color: white;
+
+  padding: 14px 34px;
+
+  border-radius: 18px;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cancel-year-btn {
+  border: 1px solid #d8d8d8;
+  cursor: pointer;
+
+  background: #eef6f6;
+
+  color: #111827;
+
+  padding: 14px 34px;
+
+  border-radius: 18px;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .academic-form {
+    grid-template-columns: 1fr;
+  }
+
+  .academic-modal {
+    max-width: 700px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .academic-years-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .year-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .year-status {
+    align-self: flex-start;
+  }
+
+  .academic-modal {
+    width: 95%;
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  .academic-modal-actions {
+    flex-direction: column;
+  }
+
+  .save-year-btn,
+  .cancel-year-btn {
+    width: 100%;
+  }
+
+  .year-info h3 {
+    font-size: 20px;
+  }
+}

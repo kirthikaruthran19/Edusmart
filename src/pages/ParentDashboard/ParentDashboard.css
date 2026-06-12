@@ -1,0 +1,61 @@
+.parent-dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+
+  background: #f7f8fc;
+}
+
+.parent-dashboard-main {
+  flex: 1;
+  margin-left: 280px;
+}
+
+.parent-dashboard-content {
+  padding: 30px;
+}
+
+.parent-dashboard-welcome {
+  margin-bottom: 25px;
+}
+
+.parent-dashboard-welcome h2 {
+  margin: 0;
+
+  color: #222;
+  font-size: 28px;
+}
+
+.parent-dashboard-welcome p {
+  margin-top: 8px;
+
+  color: #666;
+  font-size: 15px;
+}
+
+.parent-dashboard-grid {
+  margin-top: 20px;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .parent-dashboard-main {
+    margin-left: 240px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .parent-dashboard-main {
+    margin-left: 0;
+  }
+
+  .parent-dashboard-content {
+    padding: 20px;
+  }
+
+  .parent-dashboard-welcome h2 {
+    font-size: 22px;
+  }
+}

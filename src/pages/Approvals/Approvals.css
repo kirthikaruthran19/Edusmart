@@ -1,0 +1,30 @@
+.approvals-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #eef6f6;
+}
+
+.approvals-main {
+  flex: 1;
+  margin-left: 308px;
+  min-width: 0;
+}
+
+.approvals-content {
+  padding: 32px;
+}
+
+.approvals-header {
+  margin-bottom: 28px;
+}
+
+.approvals-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.approvals-header p {
+  color: #6b7280;
+  margin-top: 6px;
+}

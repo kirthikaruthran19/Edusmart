@@ -1,0 +1,11 @@
+.approval-search {
+  margin-bottom: 20px;
+}
+
+.approval-search input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #dbe2ea;
+  outline: none;
+}

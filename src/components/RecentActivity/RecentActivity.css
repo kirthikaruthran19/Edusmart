@@ -1,0 +1,134 @@
+.recent-activity {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.recent-activity h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.subtitle {
+  margin-top: 6px;
+  margin-bottom: 28px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* Activity Item */
+
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.activity-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Activity Icons */
+
+.activity-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+}
+
+/* Admission */
+
+.activity-icon.admission {
+  background: #e8f8ef;
+  color: #10b981;
+}
+
+/* Fee */
+
+.activity-icon.fee {
+  background: #ecebff;
+  color: #4f46e5;
+}
+
+/* Attendance */
+
+.activity-icon.attendance {
+  background: #e8f8ef;
+  color: #10b981;
+}
+
+/* Announcement */
+
+.activity-icon.announcement {
+  background: #f3e8ff;
+  color: #8b5cf6;
+}
+
+/* Content */
+
+.activity-content {
+  flex: 1;
+}
+
+.activity-content h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #111827;
+}
+
+/* Metadata */
+
+.activity-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+/* Initials Avatar */
+
+.activity-avatar {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #edf4ef;
+
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* User + Time */
+
+.activity-user {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+/* Hover Effect */
+
+.activity-item:hover {
+  transform: translateX(4px);
+  transition: all 0.3s ease;
+}

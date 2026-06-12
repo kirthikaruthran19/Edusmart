@@ -1,0 +1,89 @@
+.message-input-container {
+  background: white;
+
+  padding: 18px 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  border-top: 1px solid #ececec;
+}
+
+.message-input-container input {
+  flex: 1;
+
+  border: none;
+  outline: none;
+
+  background: #f3efff;
+
+  height: 54px;
+
+  padding: 0 18px;
+
+  border-radius: 14px;
+
+  font-size: 15px;
+}
+
+.input-icon-btn {
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: #6b7280;
+}
+
+.send-btn {
+  width: 48px;
+  height: 48px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #5b4ff7;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .message-input-container {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .message-input-container input {
+    height: 48px;
+    font-size: 14px;
+  }
+
+  .input-icon-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .send-btn {
+    width: 42px;
+    height: 42px;
+  }
+}

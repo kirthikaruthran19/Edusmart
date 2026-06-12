@@ -1,0 +1,88 @@
+.attendance-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 28px;
+
+  border-top: 1px solid #edf2f7;
+}
+
+.attendance-student {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.attendance-student img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.attendance-student h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.attendance-student p {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.attendance-actions {
+  background: #f1f5f9;
+
+  border-radius: 18px;
+
+  padding: 6px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.attendance-btn {
+  border: none;
+  background: transparent;
+
+  padding: 12px 22px;
+
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.attendance-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.present.active {
+  background: #dcfce7;
+  color: #16a34a;
+  border: 1px solid #22c55e;
+}
+
+.absent.active {
+  background: #fef2f2;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
+
+.late.active {
+  background: #fff7ed;
+  color: #f59e0b;
+  border: 1px solid #f59e0b;
+}

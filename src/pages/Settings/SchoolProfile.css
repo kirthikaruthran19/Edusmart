@@ -1,0 +1,109 @@
+.school-profile-card {
+  background: white;
+  border-radius: 24px;
+  padding: 32px;
+}
+
+.profile-header h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.profile-header p {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.logo-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background: #eef6f6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+}
+
+.upload-btn {
+  border: none;
+  background: #3047e8;
+  color: white;
+
+  padding: 12px 20px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+.profile-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 15px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.profile-footer {
+  margin-top: 30px;
+}
+
+.save-btn {
+  background: #3047e8;
+  color: white;
+  border: none;
+
+  padding: 14px 24px;
+  border-radius: 12px;
+
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .profile-form {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+  .logo-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

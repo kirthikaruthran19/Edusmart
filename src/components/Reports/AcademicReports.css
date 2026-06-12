@@ -1,0 +1,287 @@
+/* =========================
+   Stats Grid
+========================= */
+
+.academic-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   Stat Card
+========================= */
+
+.academic-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  min-height: 130px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.3s ease;
+}
+
+.academic-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 18px;
+
+  background: #eef2ff;
+
+  color: #3156ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.academic-card h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.academic-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+
+.academic-card p {
+  font-size: 14px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* =========================
+   Charts Grid
+========================= */
+
+.academic-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  margin-bottom: 30px;
+}
+
+/* =========================
+   Chart Card
+========================= */
+
+.academic-chart-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+  min-height: 450px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.academic-chart-card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   Recharts Fix
+========================= */
+
+.recharts-responsive-container {
+  width: 100% !important;
+}
+
+.recharts-wrapper {
+  font-size: 13px;
+}
+
+.recharts-cartesian-axis-tick-value {
+  fill: #6b7280;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none;
+}
+
+/* =========================
+   Financial Cards
+========================= */
+
+.financial-card {
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+
+  min-height: 130px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,.06);
+}
+
+.financial-card h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.financial-card h4 {
+  margin-top: 8px;
+  color: #4b5563;
+}
+
+.financial-card p {
+  margin-top: 6px;
+  color: #9ca3af;
+}
+
+/* =========================
+   Attendance Cards
+========================= */
+
+.attendance-card {
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+
+  min-height: 130px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,.06);
+}
+
+.attendance-card h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.attendance-card h4 {
+  margin-top: 8px;
+  color: #4b5563;
+}
+
+.attendance-card p {
+  margin-top: 6px;
+  color: #9ca3af;
+}
+
+/* =========================
+   Large Screens
+========================= */
+
+@media (max-width: 1400px) {
+
+  .academic-card h2 {
+    font-size: 30px;
+  }
+
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 1200px) {
+
+  .academic-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .academic-chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .academic-chart-card {
+    min-height: 420px;
+  }
+
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+
+  .academic-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .academic-chart-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .academic-card {
+    padding: 18px;
+  }
+
+  .academic-card h2 {
+    font-size: 26px;
+  }
+
+  .academic-card h4 {
+    font-size: 15px;
+  }
+
+  .academic-card p {
+    font-size: 13px;
+  }
+
+  .academic-chart-card {
+    padding: 16px;
+    min-height: 350px;
+  }
+
+  .academic-chart-card h2 {
+    font-size: 18px;
+  }
+
+}
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 480px) {
+
+  .academic-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .academic-card h2 {
+    font-size: 24px;
+  }
+
+  .academic-chart-card {
+    min-height: 320px;
+  }
+
+}

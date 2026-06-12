@@ -1,0 +1,238 @@
+.teacher-exams-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+.teacher-exams-main {
+  flex: 1;
+  margin-left: 308px;
+}
+
+.teacher-exams-content {
+  padding: 30px;
+}
+
+/* Header */
+
+.exam-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.exam-page-header h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.exam-page-header p {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.publish-marks-btn {
+  border: none;
+
+  background: linear-gradient(
+    90deg,
+    #5f4af2,
+    #6f4cf5
+  );
+
+  color: white;
+
+  padding: 18px 28px;
+
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Filters */
+
+.exam-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.search-box {
+  width: 400px;
+  height: 55px;
+
+  background: white;
+
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 18px;
+
+  gap: 12px;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+
+  font-size: 16px;
+}
+
+.class-filter {
+  background: white;
+
+  border-radius: 16px;
+
+  padding: 0 18px;
+
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.class-filter select {
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Marks Header */
+
+.marks-section-header {
+  margin-bottom: 25px;
+}
+
+.marks-section-header h2 {
+  margin: 0;
+  font-size: 34px;
+  color: #111827;
+}
+
+.marks-section-header p {
+  margin-top: 8px;
+  color: #6b7280;
+}
+
+/* AI Button */
+
+.exam-ai-button {
+  position: fixed;
+
+  right: 30px;
+  bottom: 30px;
+
+  border: none;
+
+  background: linear-gradient(
+    90deg,
+    #5f4af2,
+    #6f4cf5
+  );
+
+  color: white;
+
+  padding: 20px 28px;
+
+  border-radius: 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  box-shadow: 0 10px 30px
+    rgba(95, 74, 242, 0.3);
+
+  z-index: 100;
+}
+
+/* Tablet */
+
+@media (max-width: 1200px) {
+  .teacher-exams-main {
+    margin-left: 0;
+  }
+
+  .teacher-exams-content {
+    padding: 20px;
+  }
+
+  .exam-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .teacher-exams-content {
+    padding: 16px;
+  }
+
+  .exam-page-header h1 {
+    font-size: 30px;
+  }
+
+  .exam-filters {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .search-box,
+  .class-filter {
+    width: 100%;
+  }
+
+  .marks-section-header h2 {
+    font-size: 24px;
+  }
+
+  .publish-marks-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .exam-ai-button {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    padding: 0;
+
+    justify-content: center;
+  }
+
+  .exam-ai-button span,
+  .exam-ai-button p {
+    display: none;
+  }
+}

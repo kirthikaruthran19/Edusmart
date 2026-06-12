@@ -1,0 +1,28 @@
+.security-card {
+  background: white;
+  border-radius: 28px;
+  padding: 32px;
+}
+
+.security-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.update-password-btn {
+  background: #5b4ff7;
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  padding: 14px 22px;
+  cursor: pointer;
+}
+
+.save-wrapper {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}

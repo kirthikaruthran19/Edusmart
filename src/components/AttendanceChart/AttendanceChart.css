@@ -1,0 +1,26 @@
+.attendance-card {
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 24px;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+   width: 100%;
+  overflow: hidden;
+}
+
+.attendance-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.attendance-card p {
+  margin-top: 5px;
+  color: #6b7280;
+}
+
+.chart-container {
+  margin-top: 25px;
+  height: 300px;
+}

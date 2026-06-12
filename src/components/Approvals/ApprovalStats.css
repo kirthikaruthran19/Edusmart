@@ -1,0 +1,58 @@
+.approval-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.approval-stat-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 24px;
+  min-height: 140px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.approval-stat-card.approved {
+  border-left: 6px solid #10b981;
+}
+
+.approval-stat-card.pending {
+  border-left: 6px solid #eab308;
+}
+
+.approval-stat-card.rejected {
+  border-left: 6px solid #ef4444;
+}
+
+.stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: #f4f4f5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-content h2 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.stat-content h4 {
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+.stat-content p {
+  margin: 0;
+  color: #888;
+}

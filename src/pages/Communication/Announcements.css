@@ -1,0 +1,138 @@
+.announcements-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.announcement-card {
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 26px 34px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.announcement-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.announcement-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.announcement-badges {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.priority {
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.priority.high {
+  color: #ff5a1f;
+  border: 1px solid #ff5a1f;
+  background: #fff5f0;
+}
+
+.priority.medium {
+  color: #ff7b00;
+  border: 1px solid #ff7b00;
+  background: #fff8ee;
+}
+
+.priority.low {
+  color: #7a8ca3;
+  border: 1px solid #cfd8e3;
+  background: #edf3f8;
+}
+
+.published {
+  background: #2f3dd8;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.announcement-description {
+  color: #5f6368;
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 1100px;
+  margin-bottom: 18px;
+}
+
+.announcement-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.announcement-footer span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.announcement-footer svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 768px) {
+
+  .announcement-card {
+    width: 100%;
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .announcement-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .announcement-header h3 {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+
+  .announcement-badges {
+    flex-wrap: wrap;
+  }
+
+  .announcement-description {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+
+  .announcement-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .announcement-footer span {
+    width: 100%;
+  }
+}

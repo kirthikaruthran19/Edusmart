@@ -1,0 +1,204 @@
+.academic-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.academic-main {
+  flex: 1;
+  margin-left: 308px;
+  background: #edf8f8;
+  min-height: 100vh;
+}
+
+.academic-content {
+  padding: 30px;
+}
+
+/* ===================== */
+/* Title Section */
+/* ===================== */
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.title-row h1 {
+  margin: 0;
+  font-size: 24px !important;
+  font-weight: 700;
+  color: #111827;
+}
+
+.title-row p {
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* ===================== */
+/* Add Button */
+/* ===================== */
+
+.add-btn {
+  background: #3038d6;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 14px 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ===================== */
+/* Tabs */
+/* ===================== */
+
+.tabs {
+  display: flex;
+  gap: 10px;
+
+  background: #e4f0f0;
+  width: fit-content;
+
+  padding: 8px;
+  border-radius: 40px;
+
+  margin-bottom: 30px;
+}
+
+.tabs button {
+  border: none;
+  background: transparent;
+
+  padding: 12px 20px;
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.tabs button.active {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* ===================== */
+/* Class Grid */
+/* ===================== */
+
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ===================== */
+/* Hamburger */
+/* ===================== */
+
+.hamburger-btn {
+  display: none;
+}
+
+/* ===================== */
+/* Tablet */
+/* ===================== */
+
+@media (max-width: 1200px) {
+  .classes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===================== */
+/* Mobile */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .academic-layout {
+    flex-direction: column;
+  }
+
+  .academic-main {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .academic-content {
+    padding: 20px 15px;
+  }
+
+  .title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .title-row h1 {
+    font-size: 28px;
+  }
+
+  .title-row p {
+    font-size: 14px;
+  }
+
+  .add-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tabs {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+
+    scrollbar-width: none;
+  }
+
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .classes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hamburger-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 15px;
+    left: 15px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: white;
+    cursor: pointer;
+
+    z-index: 1300;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+}
