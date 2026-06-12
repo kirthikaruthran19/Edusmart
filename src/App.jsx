@@ -35,7 +35,7 @@ import ParentSettings from "./pages/ParentSettings/ParentSettings";
 
 function App() {
   return (
-    <BrowserRouter>
+   <BrowserRouter basename="/Edusmart">
       <Routes>
         {/* Admin */}
         <Route path="/admin-dashboard" element={<Dashboard />}/>
